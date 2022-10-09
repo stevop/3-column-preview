@@ -1,5 +1,83 @@
 @import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap");
+section {
+  max-width: 375px;
+  padding: 3.5rem 2.25rem;
+}
+section img {
+  margin-bottom: 2rem;
+}
+section h2 {
+  color: var(--very-light-gray);
+  font-family: "Big Shoulders Display", sans-serif;
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+}
+section p {
+  color: var(--transparent-white);
+  font-family: "Lexend Deca", sans-serif;
+  font-size: inherit;
+  font-weight: 400;
+  line-height: 1.8;
+  margin-bottom: 3rem;
+}
+section a {
+  border-radius: 2rem;
+  font-family: "Lexend Deca", sans-serif;
+  padding: 0.8rem 2rem;
+}
+
+.bright-orange-section {
+  background-color: var(--bright-orange);
+  border-radius: 0.625rem 0.625rem 0 0;
+}
+.bright-orange-section a {
+  color: var(--bright-orange);
+  background-color: var(--very-light-gray);
+  text-decoration: none;
+  transition: ease-in-out 0.4s background-color;
+  transition: ease-in-out 0.4s color;
+}
+.bright-orange-section a:hover {
+  color: var(--very-light-gray);
+  background-color: var(--bright-orange);
+  border: solid 2px var(--very-light-gray);
+}
+
+.dark-cyan-section {
+  background-color: var(--dark-cyan);
+}
+.dark-cyan-section a {
+  color: var(--dark-cyan);
+  background-color: var(--very-light-gray);
+  text-decoration: none;
+  transition: ease-in-out 0.4s background-color;
+  transition: ease-in-out 0.4s color;
+}
+.dark-cyan-section a:hover {
+  color: var(--very-light-gray);
+  background-color: var(--dark-cyan);
+  border: solid 2px var(--very-light-gray);
+}
+
+.very-dark-cyan-section {
+  background-color: var(--very-dark-cyan);
+  border-radius: 0 0 0.625rem 0.625rem;
+}
+.very-dark-cyan-section a {
+  color: var(--very-dark-cyan);
+  background-color: var(--very-light-gray);
+  text-decoration: none;
+  transition: ease-in-out 0.4s background-color;
+  transition: ease-in-out 0.4s color;
+}
+.very-dark-cyan-section a:hover {
+  color: var(--very-light-gray);
+  background-color: var(--very-dark-cyan);
+  border: solid 2px var(--very-light-gray);
+}
+
 :root {
   --bright-orange: hsl(31, 77%, 52%);
   --dark-cyan: hsl(184, 100%, 22%);
@@ -8,6 +86,20 @@
   --very-light-gray: hsl(0, 0%, 95%);
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   font-size: 0, 9375rem;
+  margin-top: 1rem;
+}
+
+article {
+  max-width: 375px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 1rem;
 }/*# sourceMappingURL=style.css.map */
