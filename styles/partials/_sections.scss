@@ -1,6 +1,11 @@
 section{
     max-width: 375px;
+    min-height: 450px;
     padding: 3.5rem 2.25rem;
+
+    @media only screen and (min-width: 768px){
+        min-height: 580px;
+    }
 
     img{
         margin-bottom: 2rem;

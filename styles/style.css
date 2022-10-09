@@ -2,7 +2,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap");
 section {
   max-width: 375px;
+  min-height: 450px;
   padding: 3.5rem 2.25rem;
+}
+@media only screen and (min-width: 768px) {
+  section {
+    min-height: 580px;
+  }
 }
 section img {
   margin-bottom: 2rem;
@@ -98,30 +104,32 @@ section a {
 }
 
 body {
-  background: #0B486B; /* fallback for old browsers */ /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to top, #F56217, #0B486B); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #0B486B;
+  background: linear-gradient(90deg, #F56217, var(--dark-cyan), #0B486B);
   font-size: 0, 9375rem;
   margin-top: 1rem;
-  width: 100%;
   min-height: calc(100vh - 0.1px);
+  width: 100%;
 }
 @media only screen and (min-width: 768px) {
   body {
     margin-top: 0;
     overflow: hidden;
+    background: #0B486B;
+    background: linear-gradient(to top, #F56217, #0B486B);
   }
 }
 
 article {
   max-width: 375px;
-  min-height: 100vh;
+  height: 100vh;
   margin-left: auto;
   margin-right: auto;
-  padding: 0 1rem;
+  padding: 0 1.25rem;
 }
 @media only screen and (min-width: 768px) {
   article {
-    max-width: 1440px;
+    max-width: 1125px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -140,6 +148,12 @@ article {
   font-size: 0.6875rem;
   margin-top: 1rem;
   text-align: center;
+  display: none;
+}
+@media only screen and (min-width: 768px) {
+  .attribution {
+    display: block;
+  }
 }
 
 .attribution a {
