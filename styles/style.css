@@ -93,13 +93,54 @@ section a {
 }
 
 body {
+  background: #0B486B; /* fallback for old browsers */ /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #F56217, #0B486B); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   font-size: 0, 9375rem;
   margin-top: 1rem;
+  width: 100%;
+  min-height: calc(100vh - 0.1px);
+}
+@media only screen and (min-width: 768px) {
+  body {
+    margin-top: 0;
+  }
 }
 
 article {
   max-width: 375px;
+  min-height: 100vh;
   margin-left: auto;
   margin-right: auto;
   padding: 0 1rem;
+}
+@media only screen and (min-width: 768px) {
+  article {
+    max-width: 1440px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  article .bright-orange-section {
+    border-radius: 0.625rem 0 0 0.625rem;
+  }
+  article .very-dark-cyan-section {
+    border-radius: 0 0.625rem 0.625rem 0;
+  }
+}
+
+.attribution {
+  font-family: "Lexend Deca";
+  font-size: 0, 6875rem;
+  text-align: center;
+}
+@media only screen and (min-width: 768px) {
+  .attribution {
+    margin-top: -1rem;
+  }
+}
+
+.attribution a {
+  color: var(--transparent-white);
+  text-decoration: none;
 }/*# sourceMappingURL=style.css.map */
