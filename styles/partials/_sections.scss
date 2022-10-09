@@ -38,14 +38,14 @@ section{
     a{
         color: var(--bright-orange);
         background-color: var(--very-light-gray);
+        border: solid 2px var(--very-light-gray);
         text-decoration: none;
-        transition: ease-in-out .4s background-color;
-        transition: ease-in-out .4s color;
+        transition: ease-in-out .4s all;
 
         &:hover{
             color: var(--very-light-gray);
             background-color: var(--bright-orange);
-            border: solid 2px var(--very-light-gray);
+            cursor: pointer;
         }
     }
 }
@@ -54,14 +54,14 @@ section{
     a{
         color: var(--dark-cyan);
         background-color: var(--very-light-gray);
+        border: solid 2px var(--very-light-gray);
         text-decoration: none;
-        transition: ease-in-out .4s background-color;
-        transition: ease-in-out .4s color;
+        transition: ease-in-out .4s all;
 
         &:hover{
             color: var(--very-light-gray);
             background-color: var(--dark-cyan);
-            border: solid 2px var(--very-light-gray);
+            cursor: pointer;
         }
     }
 }
@@ -72,14 +72,14 @@ section{
     a{
         color: var(--very-dark-cyan);
         background-color: var(--very-light-gray);
+        border: solid 2px var(--very-light-gray);
         text-decoration: none;
-        transition: ease-in-out .4s background-color;
-        transition: ease-in-out .4s color;
+        transition: ease-in-out .4s all;
 
         &:hover{
             color: var(--very-light-gray);
             background-color: var(--very-dark-cyan);
-            border: solid 2px var(--very-light-gray);
+            cursor: pointer;
         }
     }
 }

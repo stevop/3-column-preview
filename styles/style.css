@@ -35,14 +35,14 @@ section a {
 .bright-orange-section a {
   color: var(--bright-orange);
   background-color: var(--very-light-gray);
+  border: solid 2px var(--very-light-gray);
   text-decoration: none;
-  transition: ease-in-out 0.4s background-color;
-  transition: ease-in-out 0.4s color;
+  transition: ease-in-out 0.4s all;
 }
 .bright-orange-section a:hover {
   color: var(--very-light-gray);
   background-color: var(--bright-orange);
-  border: solid 2px var(--very-light-gray);
+  cursor: pointer;
 }
 
 .dark-cyan-section {
@@ -51,14 +51,14 @@ section a {
 .dark-cyan-section a {
   color: var(--dark-cyan);
   background-color: var(--very-light-gray);
+  border: solid 2px var(--very-light-gray);
   text-decoration: none;
-  transition: ease-in-out 0.4s background-color;
-  transition: ease-in-out 0.4s color;
+  transition: ease-in-out 0.4s all;
 }
 .dark-cyan-section a:hover {
   color: var(--very-light-gray);
   background-color: var(--dark-cyan);
-  border: solid 2px var(--very-light-gray);
+  cursor: pointer;
 }
 
 .very-dark-cyan-section {
@@ -68,14 +68,14 @@ section a {
 .very-dark-cyan-section a {
   color: var(--very-dark-cyan);
   background-color: var(--very-light-gray);
+  border: solid 2px var(--very-light-gray);
   text-decoration: none;
-  transition: ease-in-out 0.4s background-color;
-  transition: ease-in-out 0.4s color;
+  transition: ease-in-out 0.4s all;
 }
 .very-dark-cyan-section a:hover {
   color: var(--very-light-gray);
   background-color: var(--very-dark-cyan);
-  border: solid 2px var(--very-light-gray);
+  cursor: pointer;
 }
 
 :root {
@@ -133,11 +133,6 @@ article {
   font-family: "Lexend Deca";
   font-size: 0, 6875rem;
   text-align: center;
-}
-@media only screen and (min-width: 768px) {
-  .attribution {
-    margin-top: -1rem;
-  }
 }
 
 .attribution a {
